@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+:root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 197 71% 73%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+    --radius: 0.5rem;
+}
+
+.container-custom {
+    @apply max-w-7xl mx-auto px-3 sm:px-4 lg:px-6;
+}
+
+.section-padding {
+    @apply py-4 md:py-8 lg:py-10;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Glassmorphism Utilities */
+.glass-light {
+    @apply bg-white/80 backdrop-blur-md border border-white/30 shadow-xl;
+}
+
+.glass-dark {
+    @apply bg-black/20 backdrop-blur-lg border border-white/20 shadow-2xl;
+}
+
+.glass-card {
+    @apply bg-white/85 backdrop-blur-lg border border-white/40 shadow-2xl;
+}
+
+.glass-hover {
+    @apply hover:bg-white/90 hover:shadow-2xl transition-all duration-300;
+}
+
+.glass-hero {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 5rem;
+    }
+
+    .section-padding {
+        @apply py-2;
+    }
+}
+
+/* Bottom Navigation Safe Area */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    @media (max-width: 768px) {
+        body {
+            padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+        }
+    }
+}
+
+/* Fireworks Effect */
+@keyframes firework {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.animate-firework {
+    animation: firework 3s ease-out infinite;
+}
+
+.firework-particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px currentColor;
+}
+
+.firework-particle:nth-child(1) {
+    transform: translate(0, -40px);
+}
+
+.firework-particle:nth-child(2) {
+    transform: translate(35px, -20px);
+}
+
+.firework-particle:nth-child(3) {
+    transform: translate(35px, 20px);
+}
+
+.firework-particle:nth-child(4) {
+    transform: translate(0, 40px);
+}
+
+.firework-particle:nth-child(5) {
+    transform: translate(-35px, 20px);
+}
+
+.firework-particle:nth-child(6) {
+    transform: translate(-35px, -20px);
+}

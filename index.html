@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Creamos sitios web modernos y tiendas virtuales optimizadas para el éxito. Servicios profesionales de desarrollo web, e-commerce y marketing digital.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Alejandro López Murillo - Portafolio de Servicios Web</title>
+
+  <!-- Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        includedLanguages: 'es,en,pt,fr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+
+    // Helper function to change language programmatically
+    window.changeGoogleLanguage = function (langCode) {
+      console.log('changeGoogleLanguage called with:', langCode);
+
+      // Method 1: Try select element
+      var selectElement = document.querySelector('select.goog-te-combo');
+      if (selectElement) {
+        console.log('Found select, changing from', selectElement.value, 'to', langCode);
+        selectElement.value = langCode;
+        selectElement.dispatchEvent(new Event('change'));
+        return true;
+      }
+
+      // Method 2: Try using Google Translate cookies
+      var days = 30;
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      var expires = "; expires=" + date.toUTCString();
+
+      // Set Google Translate cookie
+      var domain = window.location.hostname;
+      var cookieValue = '/es/' + langCode;
+      document.cookie = "googtrans=" + cookieValue + expires + ";path=/;domain=" + domain;
+      document.cookie = "googtrans=" + cookieValue + expires + ";path=/";
+
+      console.log('Set cookie:', cookieValue);
+
+      // Reload to apply translation
+      if (langCode !== 'es') {
+        window.location.reload();
+      }
+
+      return true;
+    }
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <style>
+    /* Hide Google Translate default widget */
+    #google_translate_element {
+      display: none !important;
+    }
+
+    /* Hide Google Translate top bar */
+    .goog-te-banner-frame.skiptranslate {
+      display: none !important;
+    }
+
+    body {
+      top: 0px !important;
+    }
+
+    /* Hide Google Translate default toolbar */
+    .skiptranslate iframe {
+      visibility: hidden !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="google_translate_element"></div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

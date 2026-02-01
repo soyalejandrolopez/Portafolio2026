@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creamos sitios web modernos y tiendas virtuales optimizadas para el éxito. Servicios profesionales de desarrollo web, e-commerce y marketing digital.">
+  <meta name="keywords" content="desarrollo web, diseño web, tiendas virtuales, e-commerce, SEO, marketing digital">
+  <meta name="author" content="Alejandro López Murillo">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alejandro López Murillo - Desarrollo Web Profesional">
+  <meta property="og:description" content="Creamos sitios web modernos y tiendas virtuales optimizadas para el éxito">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <title>Alejandro López Murillo - Portafolio de Servicios Web</title>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- 3D Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">🌐</span>
+        <div class="logo-text">
+          <div class="logo-name">Alejandro</div>
+          <div class="logo-subtitle">López Murillo</div>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#about">¿Quiénes somos?</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#plans">Nuestros Planes</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="gradient-text">IMPULSA TU PRESENCIA</span>
+        <span class="gradient-text">EN LÍNEA</span>
+      </h1>
+      <p class="hero-subtitle">
+        Creamos sitios web modernos y tiendas virtuales optimizadas para el éxito.
+      </p>
+      <a href="#contact" class="cta-button">
+        ¡COMIENZA HOY MISMO!
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">QUIÉNES SOMOS</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-intro">
+            Somos un equipo apasionado de diseñadores y desarrolladores web dedicados a crear 
+            experiencias digitales excepcionales que impulsan el éxito de nuestros clientes.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="/team.png" alt="Nuestro equipo trabajando">
+        </div>
+      </div>
+
+      <div class="mission-values">
+        <div class="mission-card glass-card">
+          <h3>Nuestra Misión</h3>
+          <p>
+            Transformar ideas en soluciones digitales innovadoras que conecten marcas con su audiencia. 
+            Nos esforzamos por combinar diseño atractivo y funcionalidad impecable para crear sitios web 
+            que no solo se vean increíbles, sino que también generen resultados.
+          </p>
+        </div>
+        
+        <div class="values-card glass-card">
+          <h3>Nuestros Valores</h3>
+          <ul class="values-list">
+            <li>
+              <strong>Innovación</strong> - Buscamos constantemente nuevas tecnologías y tendencias 
+              para mantener a nuestros clientes a la vanguardia.
+            </li>
+            <li>
+              <strong>Calidad</strong> - Nos comprometemos con la excelencia en cada detalle de nuestro trabajo.
+            </li>
+            <li>
+              <strong>Colaboración</strong> - Trabajamos estrechamente con nuestros clientes para 
+              entender y materializar su visión.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Nuestros servicios</h2>
+      <p class="section-subtitle">
+        Impulsa tu presencia digital con nuestras soluciones profesionales a medida
+      </p>
+      
+      <div class="services-grid">
+        <div class="service-card glass-card">
+          <div class="service-icon">🎨</div>
+          <h3>Diseño Personalizado</h3>
+          <p>
+            Creamos diseños únicos que reflejan la identidad de tu marca y mejoran la experiencia del usuario. 
+            Nuestro enfoque combina estética moderna con funcionalidad intuitiva.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon">💻</div>
+          <h3>Desarrollo Web</h3>
+          <p>
+            Construimos sitios web modernos utilizando las últimas tecnologías (React, Next.js, Tailwind CSS) 
+            para garantizar un rendimiento óptimo, velocidad y compatibilidad multiplataforma.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon">🔒</div>
+          <h3>Pruebas y Seguridad</h3>
+          <p>
+            Realizamos pruebas exhaustivas para garantizar la calidad, seguridad y rendimiento óptimo de tu sitio. 
+            Implementamos protocolos de seguridad avanzados para proteger tus datos.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon">🚀</div>
+          <h3>Lanzamiento y Soporte</h3>
+          <p>
+            Acompañamos tu proyecto en el lanzamiento y te brindamos soporte y mantenimiento continuos para 
+            garantizar que todo funcione perfectamente y evolucione según tus necesidades.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon">🛒</div>
+          <h3>E-commerce Completo</h3>
+          <p>
+            Desarrollamos tiendas virtuales profesionales con gestión de productos, pagos seguros, 
+            múltiples pasarelas de pago e integraciones con sistemas de gestión y envíos.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon">📈</div>
+          <h3>Optimización SEO</h3>
+          <p>
+            Mejoramos la visibilidad de tu sitio en los motores de búsqueda con estrategias SEO avanzadas, 
+            investigación de palabras clave, optimización técnica y generación de contenido relevante.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon">📱</div>
+          <h3>Marketing Digital</h3>
+          <p>
+            Promocionamos tu negocio con estrategias completas de marketing digital, incluyendo redes sociales, 
+            email marketing, publicidad PPC y marketing de contenidos.
+          </p>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-icon">📲</div>
+          <h3>Aplicaciones Móviles</h3>
+          <p>
+            Desarrollamos aplicaciones móviles nativas y multiplataforma para iOS y Android con experiencias 
+            de usuario intuitivas, rápidas y que aprovechan al máximo las capacidades de los dispositivos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Nuestro portafolio</h2>
+      <p class="section-subtitle">
+        Creamos soluciones digitales innovadoras que impulsan tu negocio en línea. 
+        Explora algunos de nuestros proyectos más recientes y descubre cómo podemos ayudarte a destacar en la web.
+      </p>
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="ecommerce">Tiendas Virtuales</button>
+        <button class="filter-btn" data-filter="corporate">Sitios Corporativos</button>
+        <button class="filter-btn" data-filter="business">Sitios Empresariales</button>
+        <button class="filter-btn" data-filter="ngo">ONG's y Fundaciones</button>
+        <button class="filter-btn" data-filter="medical">Servicios Médicos</button>
+        <button class="filter-btn" data-filter="streaming">Streaming</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item glass-card" data-category="ecommerce">
+          <div class="portfolio-image">
+            <img src="/portfolio-1.png" alt="Tienda virtual textil">
+          </div>
+          <div class="portfolio-info">
+            <h3>Tienda virtual</h3>
+            <p>Implantación de una tienda virtual para una microempresa textil</p>
+            <div class="portfolio-tags">
+              <span class="tag">E-commerce</span>
+              <span class="tag">Woocommerce</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="corporate">
+          <div class="portfolio-image">
+            <img src="/portfolio-2.png" alt="Sitio corporativo Portugal">
+          </div>
+          <div class="portfolio-info">
+            <h3>Sitios Corporativos</h3>
+            <p>Implantación de una web para una comercializadora de Portugal</p>
+            <div class="portfolio-tags">
+              <span class="tag">Corporativo</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">Multilingüe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="corporate">
+          <div class="portfolio-image">
+            <img src="/portfolio-2.png" alt="Consultora contable">
+          </div>
+          <div class="portfolio-info">
+            <h3>Sitios Corporativos</h3>
+            <p>Implantación de una web para una consultora contable</p>
+            <div class="portfolio-tags">
+              <span class="tag">Servicios</span>
+              <span class="tag">React</span>
+              <span class="tag">Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="ngo">
+          <div class="portfolio-image">
+            <img src="/portfolio-3.png" alt="Fundación Timbio">
+          </div>
+          <div class="portfolio-info">
+            <h3>Sitios web ONG'S</h3>
+            <p>Implantación de una página web para una fundación Timbio, Cauca</p>
+            <div class="portfolio-tags">
+              <span class="tag">ONG</span>
+              <span class="tag">Donaciones</span>
+              <span class="tag">WordPress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="business">
+          <div class="portfolio-image">
+            <img src="/portfolio-2.png" alt="Agencia de marketing">
+          </div>
+          <div class="portfolio-info">
+            <h3>Sitios web Empresariales</h3>
+            <p>Implantación de una web para una agencia de marketing que ofrece servicios de consultoría</p>
+            <div class="portfolio-tags">
+              <span class="tag">Marketing</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="streaming">
+          <div class="portfolio-image">
+            <img src="/portfolio-1.png" alt="Radio Streaming">
+          </div>
+          <div class="portfolio-info">
+            <h3>Radio Streaming Services</h3>
+            <p>Implementación con software de una radio virtual con servidores VPS</p>
+            <div class="portfolio-tags">
+              <span class="tag">Streaming</span>
+              <span class="tag">Radio</span>
+              <span class="tag">VPS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="ngo">
+          <div class="portfolio-image">
+            <img src="/portfolio-3.png" alt="Fundación Popayán">
+          </div>
+          <div class="portfolio-info">
+            <h3>Sitios web para Fundaciones</h3>
+            <p>Implantación de una página web para una fundación de la ciudad de Popayán</p>
+            <div class="portfolio-tags">
+              <span class="tag">Fundación</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">Eventos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="business">
+          <div class="portfolio-image">
+            <img src="/portfolio-2.png" alt="Empresa exportación">
+          </div>
+          <div class="portfolio-info">
+            <h3>Sitios web Empresariales</h3>
+            <p>Implantación de una página web para una empresa de exportación internacional</p>
+            <div class="portfolio-tags">
+              <span class="tag">Exportación</span>
+              <span class="tag">React</span>
+              <span class="tag">Multilingüe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="ecommerce">
+          <div class="portfolio-image">
+            <img src="/portfolio-1.png" alt="Restaurante">
+          </div>
+          <div class="portfolio-info">
+            <h3>Tienda virtuales</h3>
+            <p>Implantación de una tienda virtual para un restaurante local</p>
+            <div class="portfolio-tags">
+              <span class="tag">Restaurante</span>
+              <span class="tag">E-commerce</span>
+              <span class="tag">Pedidos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="medical">
+          <div class="portfolio-image">
+            <img src="/portfolio-4.png" alt="Servicios médicos">
+          </div>
+          <div class="portfolio-info">
+            <h3>Sitios web Servicios médicos personalizados</h3>
+            <p>Implantación de una sitio web personalizado para atención médica personalizada</p>
+            <div class="portfolio-tags">
+              <span class="tag">Salud</span>
+              <span class="tag">Citas</span>
+              <span class="tag">Web App</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item glass-card" data-category="ngo">
+          <div class="portfolio-image">
+            <img src="/portfolio-3.png" alt="ONG Internacional">
+          </div>
+          <div class="portfolio-info">
+            <h3>Sitios web ONG'S</h3>
+            <p>Implantación de una página web para una fundación ubicada en Mallory Ave Jersey City</p>
+            <div class="portfolio-tags">
+              <span class="tag">Internacional</span>
+              <span class="tag">Donaciones</span>
+              <span class="tag">React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-box glass-card">
+        <h3>¿Listo para destacar en el mundo digital?</h3>
+        <p>
+          Creamos soluciones digitales innovadoras que impulsan tu negocio en línea 
+          y te ayudan a conectar con tu audiencia.
+        </p>
+        <a href="#contact" class="cta-button">Comienza tu proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans" class="plans">
+    <div class="container">
+      <h2 class="section-title">Nuestros planes</h2>
+      
+      <div class="currency-selector">
+        <label>Seleccionar moneda</label>
+        <select id="currency-select">
+          <option value="COP">COP</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+
+      <div class="plans-grid">
+        <div class="plan-card glass-card">
+          <div class="plan-number">1</div>
+          <h3>Plan Básico</h3>
+          <p class="plan-description">
+            Ideal para pequeñas empresas que necesitan una presencia en línea.
+          </p>
+          <div class="plan-price">
+            <span class="currency-symbol">$</span>
+            <span class="price-amount" data-cop="450000" data-usd="110" data-eur="100">450.000</span>
+          </div>
+          <p class="plan-billing">Pago único</p>
+          
+          <ul class="plan-features">
+            <li>✓ Sitio web optimizado para móviles</li>
+            <li>✓ Diseño personalizado básico</li>
+            <li>✓ Dominio gratuito por 1 año</li>
+            <li>✓ Soporte técnico prioritario</li>
+            <li>✓ Hasta 5 páginas web</li>
+            <li>✓ Integración básica de redes sociales</li>
+          </ul>
+          
+          <button class="plan-button">Seleccionar plan</button>
+        </div>
+
+        <div class="plan-card glass-card featured">
+          <div class="plan-badge">Recomendado</div>
+          <div class="plan-number">2</div>
+          <h3>Plan Estándar</h3>
+          <p class="plan-description">
+            Perfecto para empresas medianas que buscan funcionalidades adicionales.
+          </p>
+          <div class="plan-price">
+            <span class="currency-symbol">$</span>
+            <span class="price-amount" data-cop="650000" data-usd="160" data-eur="145">650.000</span>
+          </div>
+          <p class="plan-billing">Pago único</p>
+          
+          <ul class="plan-features">
+            <li>✓ Sitio web optimizado para móviles</li>
+            <li>✓ Diseño personalizado avanzado</li>
+            <li>✓ Dominio gratuito por 1 año</li>
+            <li>✓ Soporte técnico 24/7</li>
+            <li>✓ Hasta 10 páginas web</li>
+            <li>✓ Integración completa de redes sociales</li>
+            <li>✓ Optimización SEO básica</li>
+          </ul>
+          
+          <button class="plan-button">Seleccionar plan</button>
+        </div>
+
+        <div class="plan-card glass-card">
+          <div class="plan-number">3</div>
+          <h3>Plan Premium</h3>
+          <p class="plan-description">
+            La mejor opción para grandes empresas que necesitan un sitio robusto.
+          </p>
+          <div class="plan-price">
+            <span class="currency-symbol">$</span>
+            <span class="price-amount" data-cop="750000" data-usd="185" data-eur="170">750.000</span>
+          </div>
+          <p class="plan-billing">Pago único</p>
+          
+          <ul class="plan-features">
+            <li>✓ Sitio web optimizado para móviles</li>
+            <li>✓ Diseño personalizado premium</li>
+            <li>✓ Dominio gratuito por 1 año</li>
+            <li>✓ Soporte técnico prioritario 24/7</li>
+            <li>✓ Páginas ilimitadas</li>
+            <li>✓ Tienda virtual integrada</li>
+          </ul>
+          
+          <button class="plan-button">Seleccionar plan</button>
+        </div>
+      </div>
+
+      <div class="custom-plan glass-card">
+        <h3>¿Necesitas un plan más personalizado?</h3>
+        <p>
+          Creamos soluciones digitales innovadoras que impulsan tu negocio en línea. 
+          Nos enfocamos en diseño personalizado, funcionalidad avanzada y resultados medibles.
+        </p>
+        <a href="#contact" class="cta-button">¿Necesitas un plan personalizado?</a>
+      </div>
+
+      <div class="payment-methods">
+        <h3>Métodos de Pago</h3>
+        <p>Ofrecemos múltiples opciones de pago seguras y convenientes para nuestros servicios.</p>
+        
+        <div class="payment-grid">
+          <div class="payment-card glass-card">
+            <h4>Wompi</h4>
+            <p>Pago seguro con tarjetas de crédito o débito</p>
+            <button class="payment-button">Pagar con Wompi</button>
+          </div>
+          
+          <div class="payment-card glass-card">
+            <h4>ePayco</h4>
+            <p>Múltiples métodos de pago en un solo lugar</p>
+            <button class="payment-button">Pagar con ePayco</button>
+          </div>
+          
+          <div class="payment-card glass-card">
+            <h4>Bold (Wompi)</h4>
+            <p>Pasarela de pago rápida y segura</p>
+            <button class="payment-button">Pagar con Bold (Wompi)</button>
+          </div>
+          
+          <div class="payment-card glass-card">
+            <h4>PayPal</h4>
+            <p>Pago internacional seguro</p>
+            <button class="payment-button">Pagar con PayPal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Testimonios</h2>
+      <p class="section-subtitle">
+        En nuestra empresa, nos enorgullece ofrecer soluciones digitales que superan las expectativas 
+        de nuestros clientes. Aquí algunos testimonios de quienes han confiado en nosotros.
+      </p>
+
+      <div class="testimonial-card glass-card">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">
+          No podríamos estar más satisfechos con el trabajo de Alejandro. Entendió perfectamente nuestra 
+          visión y la implementó con un diseño moderno y funcional que ha multiplicado nuestras conversiones.
+        </p>
+        <div class="testimonial-author">
+          <div class="author-name">Sofía Ramírez</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Mantente en contacto</h2>
+      <p class="section-subtitle">
+        ¿Tienes alguna pregunta o quieres iniciar un proyecto con nosotros? Estamos aquí para ayudarte.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📧</div>
+          <h3>Correo Electrónico</h3>
+          <p><a href="mailto:negocios.alejandrolopezmurillo@gmail.com">negocios.alejandrolopezmurillo@gmail.com</a></p>
+          <p><a href="mailto:business.alejandrolopezmurillo@gmail.com">business.alejandrolopezmurillo@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon">📱</div>
+          <h3>Teléfono</h3>
+          <p><a href="tel:+573122154598">+57 312 215 4598</a></p>
+          <p><a href="tel:+573025790274">+57 302 579 0274</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">🌐</span>
+            <div class="logo-text">
+              <div class="logo-name">Alejandro</div>
+              <div class="logo-subtitle">López Murillo</div>
+            </div>
+          </div>
+          <p class="footer-description">
+            Creamos soluciones digitales innovadoras que impulsan tu negocio en línea. 
+            Nos enfocamos en diseño personalizado, funcionalidad avanzada y resultados medibles.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="#services">Tiendas Virtuales</a></li>
+              <li><a href="#services">Diseño Web</a></li>
+              <li><a href="#services">Optimización SEO</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#about">¿Quiénes somos?</a></li>
+              <li><a href="#portfolio">Portafolio</a></li>
+              <li><a href="#plans">Planes</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Información de Contacto</h4>
+            <ul>
+              <li><a href="mailto:negocios.alejandrolopezmurillo@gmail.com">negocios.alejandrolopezmurillo@gmail.com</a></li>
+              <li><a href="mailto:business.alejandrolopezmurillo@gmail.com">business.alejandrolopezmurillo@gmail.com</a></li>
+              <li><a href="tel:+573122154598">+57 312 215 4598</a></li>
+              <li><a href="tel:+573025790274">+57 302 579 0274</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 www.alejandropro.co - Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
